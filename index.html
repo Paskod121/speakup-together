@@ -1,421 +1,838 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🇺🇸 American English Mastery Hub</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO & Metadata -->
+    <title>SpeakUp Together - American English Mastery</title>
+    <meta
+      name="description"
+      content="Maîtrisez l'accent américain, dominez les conversations et parlez anglais comme un natif. Suivez vos progrès et relevez des défis !" />
+    <meta name="author" content="Sewonou Pascal" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://Paskod121.github.io/speakup-together/" />
+    <meta
+      property="og:title"
+      content="SpeakUp Together - American English Mastery Hub" />
+    <meta
+      property="og:description"
+      content="La plateforme ultime pour maîtriser l'accent et la culture américaine. Prêt à devenir un champion ?" />
+    <meta
+      property="og:image"
+      content="https://Paskod121.github.io/speakup-together/EnglishDuo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://Paskod121.github.io/speakup-together/" />
+    <meta
+      property="twitter:title"
+      content="SpeakUp Together - American English Mastery Hub" />
+    <meta
+      property="twitter:description"
+      content="La plateforme ultime pour maîtriser l'accent et la culture américaine. Prêt à devenir un champion ?" />
+    <meta
+      property="twitter:image"
+      content="https://Paskod121.github.io/speakup-together/EnglishDuo.png" />
+
+    <!-- Stylesheets -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <i class="crown fas fa-crown"></i>
-            <h1 class="main-title">🇺🇸 ENGLISH MASTERY</h1>
-            <p class="subtitle">
-                <i class="fas fa-crown" style="color: #fbbf24; margin: 0 0.5rem;"></i>
-                Elite American Accent Training
-                <i class="fas fa-crown" style="color: #fbbf24; margin: 0 0.5rem;"></i>
+      <!-- Header -->
+      <header class="header">
+        <i class="crown fas fa-crown"></i>
+        <h1 class="main-title">🇺🇸 ENGLISH MASTERY</h1>
+        <p class="subtitle">
+          <i class="fas fa-crown" style="color: #fbbf24; margin: 0 0.5rem"></i>
+          Elite American Accent Training
+          <i class="fas fa-crown" style="color: #fbbf24; margin: 0 0.5rem"></i>
+        </p>
+        <p class="tagline">
+          Speak like a native • Think like an American • Dominate conversations
+        </p>
+      </header>
+
+      <!-- Navigation -->
+      <nav class="nav-container">
+        <div class="nav-buttons">
+          <button class="nav-btn active" data-section="dashboard">
+            <i class="fas fa-chart-line"></i>
+            <span class="nav-text">Command Center</span>
+          </button>
+          <button class="nav-btn" data-section="conversation">
+            <i class="fas fa-microphone"></i>
+            <span class="nav-text">Conversation Arena</span>
+          </button>
+          <button class="nav-btn" data-section="accent">
+            <i class="fas fa-volume-up"></i>
+            <span class="nav-text">Accent Lab</span>
+          </button>
+          <button class="nav-btn" data-section="plan">
+            <i class="fas fa-calendar"></i>
+            <span class="nav-text">Elite Schedule</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Dashboard Section -->
+      <div id="dashboard" class="section active">
+        <!-- Hero Card -->
+        <div class="card challenge-card">
+          <i class="crown fas fa-crown"></i>
+          <div style="position: relative; z-index: 2">
+            <h2 style="font-size: 2rem; margin-bottom: 0.5rem">
+              Welcome back, Champion! 🏆
+            </h2>
+            <p style="color: #c4b5fd; margin-bottom: 1rem">
+              Ready to level up your American English today?
             </p>
-            <p class="tagline">Speak like a native • Think like an American • Dominate conversations</p>
-        </header>
-
-        <!-- Navigation -->
-        <nav class="nav-container">
-            <div class="nav-buttons">
-                <button class="nav-btn active" data-section="dashboard">
-                    <i class="fas fa-chart-line"></i>
-                    <span class="nav-text">Command Center</span>
-                </button>
-                <button class="nav-btn" data-section="conversation">
-                    <i class="fas fa-microphone"></i>
-                    <span class="nav-text">Conversation Arena</span>
-                </button>
-                <button class="nav-btn" data-section="accent">
-                    <i class="fas fa-volume-up"></i>
-                    <span class="nav-text">Accent Lab</span>
-                </button>
-                <button class="nav-btn" data-section="plan">
-                    <i class="fas fa-calendar"></i>
-                    <span class="nav-text">Elite Schedule</span>
-                </button>
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <i class="fas fa-star" style="color: #fbbf24"></i>
+              <span style="color: #fbbf24; font-weight: 600"
+                >Level 12 • Elite Learner</span
+              >
             </div>
-        </nav>
-
-        <!-- Dashboard Section -->
-        <div id="dashboard" class="section active">
-            <!-- Hero Card -->
-            <div class="card challenge-card">
-                <i class="crown fas fa-crown"></i>
-                <div style="position: relative; z-index: 2;">
-                    <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Welcome back, Champion! 🏆</h2>
-                    <p style="color: #c4b5fd; margin-bottom: 1rem;">Ready to level up your American English today?</p>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-star" style="color: #fbbf24;"></i>
-                        <span style="color: #fbbf24; font-weight: 600;">Level 12 • Elite Learner</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats Grid -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div>
-                            <div class="stat-label">Fire Streak</div>
-                            <div class="stat-number" id="streak-number">7</div>
-                            <div class="stat-sublabel fire-text">days strong</div>
-                        </div>
-                        <div class="stat-icon fire-icon">
-                            <i class="fas fa-fire"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div>
-                            <div class="stat-label">Master Level</div>
-                            <div class="stat-number" id="level-number">12</div>
-                            <div class="stat-sublabel trophy-text">elite status</div>
-                        </div>
-                        <div class="stat-icon trophy-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div>
-                            <div class="stat-label">XP Points</div>
-                            <div class="stat-number" id="points-number">1,240</div>
-                            <div class="stat-sublabel star-text">legend tier</div>
-                        </div>
-                        <div class="stat-icon star-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Today's Mission -->
-            <div class="card">
-                <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
-                    <div class="stat-icon fire-icon" style="margin-right: 1rem; width: 50px; height: 50px;">
-                        <i class="fas fa-target"></i>
-                    </div>
-                    <div>
-                        <h3 style="font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 0.25rem;">Today's Mission</h3>
-                        <p style="color: #94a3b8;">Dominate these skills like a boss</p>
-                    </div>
-                </div>
-
-                <div class="progress-container">
-                    <div class="progress-item">
-                        <div class="progress-header">
-                            <div class="progress-label">
-                                <div class="progress-dot" style="background: #fbbf24;"></div>
-                                Vocabulary
-                            </div>
-                            <span style="color: #94a3b8; font-weight: 700;">80%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill vocab-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="progress-item">
-                        <div class="progress-header">
-                            <div class="progress-label">
-                                <div class="progress-dot" style="background: #10b981;"></div>
-                                Speaking
-                            </div>
-                            <span style="color: #94a3b8; font-weight: 700;">60%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill speak-progress" style="width: 60%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="progress-item">
-                        <div class="progress-header">
-                            <div class="progress-label">
-                                <div class="progress-dot" style="background: #8b5cf6;"></div>
-                                Listening
-                            </div>
-                            <span style="color: #94a3b8; font-weight: 700;">45%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill listen-progress" style="width: 45%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Weekly Challenge -->
-            <div class="card challenge-card">
-                <div class="challenge-title">
-                    <i class="fas fa-bolt" style="color: #fbbf24;"></i>
-                    Weekly Boss Challenge
-                </div>
-                <div class="challenge-subtitle">American Slang & Pop Culture</div>
-                
-                <div class="challenge-progress">
-                    <div class="challenge-progress-fill" style="width: 65%;"></div>
-                    <div class="challenge-progress-text">65% Complete</div>
-                </div>
-
-                <div class="challenge-tasks">
-                    <div class="task-item task-completed">
-                        <i class="task-icon fas fa-check-circle"></i>
-                        <span class="task-text">Learn 10 Gen Z expressions</span>
-                    </div>
-                    <div class="task-item task-completed">
-                        <i class="task-icon fas fa-check-circle"></i>
-                        <span class="task-text">Master 'like' as a filler word</span>
-                    </div>
-                    <div class="task-item task-pending">
-                        <i class="task-icon far fa-circle"></i>
-                        <span class="task-text">Practice American movie quotes</span>
-                    </div>
-                    <div class="task-item task-pending">
-                        <i class="task-icon far fa-circle"></i>
-                        <span class="task-text">Nail the American 'R' sound</span>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
 
-        <!-- Conversation Section -->
-        <div id="conversation" class="section">
-            <div style="display: flex; align-items: center; margin-bottom: 2rem;">
-                <div class="stat-icon trophy-icon" style="margin-right: 1rem;">
-                    <i class="fas fa-microphone"></i>
-                </div>
-                <div>
-                    <h2 style="font-size: 2rem; font-weight: 700; color: white; margin-bottom: 0.25rem;">Conversation Arena</h2>
-                    <p style="color: #94a3b8;">Master real American conversations</p>
-                </div>
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-header">
+              <div>
+                <div class="stat-label">Fire Streak</div>
+                <div class="stat-number" id="streak-number">7</div>
+                <div class="stat-sublabel fire-text">days strong</div>
+              </div>
+              <div class="stat-icon fire-icon">
+                <i class="fas fa-fire"></i>
+              </div>
             </div>
+          </div>
 
-            <div class="scenarios-grid">
-                <div class="scenario-card" onclick="openScenario('coffee')">
-                    <div class="scenario-header">
-                        <h3 class="scenario-title">Coffee Shop Order</h3>
-                        <span class="difficulty-badge difficulty-beginner">Beginner</span>
-                    </div>
-                    <p class="scenario-description">You're at Starbucks in NYC. Practice ordering like a local with authentic American expressions.</p>
-                    <div class="scenario-action">
-                        <i class="fas fa-play"></i>
-                        Start Practice
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-
-                <div class="scenario-card" onclick="openScenario('interview')">
-                    <div class="scenario-header">
-                        <h3 class="scenario-title">Job Interview Small Talk</h3>
-                        <span class="difficulty-badge difficulty-intermediate">Intermediate</span>
-                    </div>
-                    <p class="scenario-description">Before your interview starts. Master the art of professional American small talk.</p>
-                    <div class="scenario-action">
-                        <i class="fas fa-play"></i>
-                        Start Practice
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-
-                <div class="scenario-card" onclick="openScenario('netflix')">
-                    <div class="scenario-header">
-                        <h3 class="scenario-title">Netflix & Chill</h3>
-                        <span class="difficulty-badge difficulty-advanced">Advanced</span>
-                    </div>
-                    <p class="scenario-description">Casual hangout with friends. Learn how Americans really talk in relaxed settings.</p>
-                    <div class="scenario-action">
-                        <i class="fas fa-play"></i>
-                        Start Practice
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
+          <div class="stat-card">
+            <div class="stat-header">
+              <div>
+                <div class="stat-label">Master Level</div>
+                <div class="stat-number" id="level-number">12</div>
+                <div class="stat-sublabel trophy-text">elite status</div>
+              </div>
+              <div class="stat-icon trophy-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
             </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <div>
+                <div class="stat-label">XP Points</div>
+                <div class="stat-number" id="points-number">1,240</div>
+                <div class="stat-sublabel star-text">legend tier</div>
+              </div>
+              <div class="stat-icon star-icon">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Accent Section -->
-        <div id="accent" class="section">
-            <div style="display: flex; align-items: center; margin-bottom: 2rem;">
-                <div class="stat-icon star-icon" style="margin-right: 1rem;">
-                    <i class="fas fa-volume-up"></i>
+        <!-- Today's Mission -->
+        <div class="card">
+          <div
+            style="display: flex; align-items: center; margin-bottom: 1.5rem">
+            <div
+              class="stat-icon fire-icon"
+              style="margin-right: 1rem; width: 50px; height: 50px">
+              <i class="fas fa-target"></i>
+            </div>
+            <div>
+              <h3
+                style="
+                  font-size: 1.5rem;
+                  font-weight: 700;
+                  color: white;
+                  margin-bottom: 0.25rem;
+                ">
+                Today's Mission
+              </h3>
+              <p style="color: #94a3b8">Dominate these skills like a boss</p>
+            </div>
+          </div>
+
+          <div class="progress-container">
+            <div class="progress-item">
+              <div class="progress-header">
+                <div class="progress-label">
+                  <div class="progress-dot" style="background: #fbbf24"></div>
+                  Vocabulary
                 </div>
-                <div>
-                    <h2 style="font-size: 2rem; font-weight: 700; color: white; margin-bottom: 0.25rem;">Accent Mastery Lab</h2>
-                    <p style="color: #94a3b8;">Perfect your American pronunciation</p>
-                </div>
+                <span style="color: #94a3b8; font-weight: 700">80%</span>
+              </div>
+              <div class="progress-bar">
+                <div
+                  class="progress-fill vocab-progress"
+                  style="width: 80%"></div>
+              </div>
             </div>
 
-            <div class="scenarios-grid">
-                <div class="card">
-                    <h3 style="color: white; font-weight: 700; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
-                        American R Sound
-                        <span style="font-size: 1.5rem;">🔥🔥🔥</span>
-                    </h3>
-                    <div style="margin-bottom: 1rem;">
-                        <p style="color: #94a3b8; margin-bottom: 0.5rem; font-weight: 600;">Practice Words:</p>
-                        <p style="font-family: monospace; color: #fbbf24; background: rgba(15, 23, 42, 0.5); padding: 0.75rem; border-radius: 0.5rem; font-size: 1.1rem;">car, hard, more</p>
-                    </div>
-                    <div style="background: rgba(251, 191, 36, 0.2); border: 1px solid rgba(251, 191, 36, 0.3); padding: 1rem; border-radius: 0.75rem; margin-bottom: 1.5rem;">
-                        <p style="color: #fcd34d; font-size: 0.9rem; line-height: 1.5;">
-                            💡 <strong>Master Tip:</strong> Curl your tongue back, don't touch the roof of your mouth.
-                        </p>
-                    </div>
-                    <button onclick="practiceSound('american-r')" style="width: 100%; background: linear-gradient(45deg, #8b5cf6, #7c3aed); color: white; padding: 0.75rem; border: none; border-radius: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
-                        🎯 Master This Sound
-                    </button>
+            <div class="progress-item">
+              <div class="progress-header">
+                <div class="progress-label">
+                  <div class="progress-dot" style="background: #10b981"></div>
+                  Speaking
                 </div>
-
-                <div class="card">
-                    <h3 style="color: white; font-weight: 700; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
-                        TH Sounds
-                        <span style="font-size: 1.5rem;">🔥🔥</span>
-                    </h3>
-                    <div style="margin-bottom: 1rem;">
-                        <p style="color: #94a3b8; margin-bottom: 0.5rem; font-weight: 600;">Practice Words:</p>
-                        <p style="font-family: monospace; color: #fbbf24; background: rgba(15, 23, 42, 0.5); padding: 0.75rem; border-radius: 0.5rem; font-size: 1.1rem;">think, that, three</p>
-                    </div>
-                    <div style="background: rgba(251, 191, 36, 0.2); border: 1px solid rgba(251, 191, 36, 0.3); padding: 1rem; border-radius: 0.75rem; margin-bottom: 1.5rem;">
-                        <p style="color: #fcd34d; font-size: 0.9rem; line-height: 1.5;">
-                            💡 <strong>Master Tip:</strong> Put your tongue between your teeth and breathe out gently.
-                        </p>
-                    </div>
-                    <button onclick="practiceSound('th-sounds')" style="width: 100%; background: linear-gradient(45deg, #8b5cf6, #7c3aed); color: white; padding: 0.75rem; border: none; border-radius: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
-                        🎯 Master This Sound
-                    </button>
-                </div>
-
-                <div class="card">
-                    <h3 style="color: white; font-weight: 700; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
-                        Schwa /ə/
-                        <span style="font-size: 1.5rem;">🔥</span>
-                    </h3>
-                    <div style="margin-bottom: 1rem;">
-                        <p style="color: #94a3b8; margin-bottom: 0.5rem; font-weight: 600;">Practice Words:</p>
-                        <p style="font-family: monospace; color: #fbbf24; background: rgba(15, 23, 42, 0.5); padding: 0.75rem; border-radius: 0.5rem; font-size: 1.1rem;">about, sofa, camera</p>
-                    </div>
-                    <div style="background: rgba(251, 191, 36, 0.2); border: 1px solid rgba(251, 191, 36, 0.3); padding: 1rem; border-radius: 0.75rem; margin-bottom: 1.5rem;">
-                        <p style="color: #fcd34d; font-size: 0.9rem; line-height: 1.5;">
-                            💡 <strong>Master Tip:</strong> The lazy vowel - most common sound in American English!
-                        </p>
-                    </div>
-                    <button onclick="practiceSound('schwa')" style="width: 100%; background: linear-gradient(45deg, #8b5cf6, #7c3aed); color: white; padding: 0.75rem; border: none; border-radius: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
-                        🎯 Master This Sound
-                    </button>
-                </div>
+                <span style="color: #94a3b8; font-weight: 700">60%</span>
+              </div>
+              <div class="progress-bar">
+                <div
+                  class="progress-fill speak-progress"
+                  style="width: 60%"></div>
+              </div>
             </div>
+
+            <div class="progress-item">
+              <div class="progress-header">
+                <div class="progress-label">
+                  <div class="progress-dot" style="background: #8b5cf6"></div>
+                  Listening
+                </div>
+                <span style="color: #94a3b8; font-weight: 700">45%</span>
+              </div>
+              <div class="progress-bar">
+                <div
+                  class="progress-fill listen-progress"
+                  style="width: 45%"></div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Schedule Section -->
-        <div id="plan" class="section">
-            <div style="display: flex; align-items: center; margin-bottom: 2rem;">
-                <div class="stat-icon" style="background: linear-gradient(45deg, #3b82f6, #1d4ed8); margin-right: 1rem;">
-                    <i class="fas fa-calendar"></i>
-                </div>
-                <div>
-                    <h2 style="font-size: 2rem; font-weight: 700; color: white; margin-bottom: 0.25rem;">Elite Training Schedule</h2>
-                    <p style="color: #94a3b8;">Your path to American English mastery</p>
-                </div>
+        <!-- Weekly Challenge -->
+        <div class="card challenge-card">
+          <div class="challenge-title">
+            <i class="fas fa-bolt" style="color: #fbbf24"></i>
+            Weekly Boss Challenge
+          </div>
+          <div class="challenge-subtitle">American Slang & Pop Culture</div>
+
+          <div class="challenge-progress">
+            <div class="challenge-progress-fill" style="width: 65%"></div>
+            <div class="challenge-progress-text">65% Complete</div>
+          </div>
+
+          <div class="challenge-tasks">
+            <div class="task-item task-completed">
+              <i class="task-icon fas fa-check-circle"></i>
+              <span class="task-text">Learn 10 Gen Z expressions</span>
             </div>
-
-            <div class="card">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-                    <!-- Monday-Friday -->
-                    <div style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.3); padding: 1.5rem; border-radius: 1rem;">
-                        <h4 style="color: white; font-weight: 700; margin-bottom: 1rem; font-size: 1.1rem;">Mon-Fri</h4>
-                        <div style="font-size: 0.9rem; line-height: 1.8;">
-                            <div style="display: flex; align-items: center; color: #93c5fd; margin-bottom: 0.5rem;">
-                                <div style="width: 8px; height: 8px; background: #fbbf24; border-radius: 50%; margin-right: 0.5rem;"></div>
-                                Morning: Flashcards + Shadowing
-                            </div>
-                            <div style="display: flex; align-items: center; color: #93c5fd; margin-bottom: 0.5rem;">
-                                <div style="width: 8px; height: 8px; background: #fbbf24; border-radius: 50%; margin-right: 0.5rem;"></div>
-                                Afternoon: Series + Discussion
-                            </div>
-                            <div style="display: flex; align-items: center; color: #93c5fd;">
-                                <div style="width: 8px; height: 8px; background: #fbbf24; border-radius: 50%; margin-right: 0.5rem;"></div>
-                                Evening: Vocal Journal
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Saturday -->
-                    <div style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.3); padding: 1.5rem; border-radius: 1rem;">
-                        <h4 style="color: white; font-weight: 700; margin-bottom: 1rem; font-size: 1.1rem;">Saturday</h4>
-                        <div style="font-size: 0.9rem; line-height: 1.8;">
-                            <div style="display: flex; align-items: center; color: #6ee7b7; margin-bottom: 0.5rem;">
-                                <div style="width: 8px; height: 8px; background: #fbbf24; border-radius: 50%; margin-right: 0.5rem;"></div>
-                                Movie Marathon
-                            </div>
-                            <div style="display: flex; align-items: center; color: #6ee7b7;">
-                                <div style="width: 8px; height: 8px; background: #fbbf24; border-radius: 50%; margin-right: 0.5rem;"></div>
-                                Mini Sketch Practice
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sunday -->
-                    <div style="background: rgba(139, 92, 246, 0.2); border: 1px solid rgba(139, 92, 246, 0.3); padding: 1.5rem; border-radius: 1rem;">
-                        <h4 style="color: white; font-weight: 700; margin-bottom: 1rem; font-size: 1.1rem;">Sunday</h4>
-                        <div style="font-size: 0.9rem; line-height: 1.8;">
-                            <div style="display: flex; align-items: center; color: #c4b5fd; margin-bottom: 0.5rem;">
-                                <div style="width: 8px; height: 8px; background: #fbbf24; border-radius: 50%; margin-right: 0.5rem;"></div>
-                                Weekly Review
-                            </div>
-                            <div style="display: flex; align-items: center; color: #c4b5fd;">
-                                <div style="width: 8px; height: 8px; background: #fbbf24; border-radius: 50%; margin-right: 0.5rem;"></div>
-                                Next Week Planning
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="task-item task-completed">
+              <i class="task-icon fas fa-check-circle"></i>
+              <span class="task-text">Master 'like' as a filler word</span>
             </div>
-
-            <!-- Power Focus -->
-            <div class="card challenge-card">
-                <div class="challenge-title">
-                    <i class="fas fa-star" style="color: #fbbf24;"></i>
-                    This Week's Power Focus
-                </div>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
-                    <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.2); padding: 1rem; border-radius: 0.75rem;">
-                        <h4 style="color: #fbbf24; font-weight: 700; margin-bottom: 0.5rem;">📚 Vocabulary Theme:</h4>
-                        <p style="color: white; font-weight: 600;">Tech & Social Media 📱</p>
-                    </div>
-                    <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.2); padding: 1rem; border-radius: 0.75rem;">
-                        <h4 style="color: #10b981; font-weight: 700; margin-bottom: 0.5rem;">⚡ Grammar Focus:</h4>
-                        <p style="color: white; font-weight: 600;">Phrasal Verbs in Context 🔄</p>
-                    </div>
-                    <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.2); padding: 1rem; border-radius: 0.75rem;">
-                        <h4 style="color: #8b5cf6; font-weight: 700; margin-bottom: 0.5rem;">🎭 Cultural Topic:</h4>
-                        <p style="color: white; font-weight: 600;">American Work Culture 💼</p>
-                    </div>
-                    <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(148, 163, 184, 0.2); padding: 1rem; border-radius: 0.75rem;">
-                        <h4 style="color: #ec4899; font-weight: 700; margin-bottom: 0.5rem;">🎵 Pronunciation:</h4>
-                        <p style="color: white; font-weight: 600;">Linking Sounds & Rhythm 🎵</p>
-                    </div>
-                </div>
+            <div class="task-item task-pending">
+              <i class="task-icon far fa-circle"></i>
+              <span class="task-text">Practice American movie quotes</span>
             </div>
+            <div class="task-item task-pending">
+              <i class="task-icon far fa-circle"></i>
+              <span class="task-text">Nail the American 'R' sound</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conversation Section -->
+      <div id="conversation" class="section">
+        <div style="display: flex; align-items: center; margin-bottom: 2rem">
+          <div class="stat-icon trophy-icon" style="margin-right: 1rem">
+            <i class="fas fa-microphone"></i>
+          </div>
+          <div>
+            <h2
+              style="
+                font-size: 2rem;
+                font-weight: 700;
+                color: white;
+                margin-bottom: 0.25rem;
+              ">
+              Conversation Arena
+            </h2>
+            <p style="color: #94a3b8">Master real American conversations</p>
+          </div>
         </div>
 
-        <!-- Footer -->
-        <footer style="text-align: center; margin-top: 3rem;">
-            <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.6)); padding: 1rem 2rem; border-radius: 1.5rem; border: 1px solid rgba(148, 163, 184, 0.2);">
-                <i class="fas fa-star" style="color: #fbbf24; animation: goldPulse 2s infinite;"></i>
-                <span style="color: #94a3b8; font-weight: 500;">Powered by AI • Built for Champions</span>
-                <i class="fas fa-star" style="color: #fbbf24; animation: goldPulse 2s infinite;"></i>
+        <div class="scenarios-grid">
+          <div class="scenario-card" onclick="openScenario('coffee')">
+            <div class="scenario-header">
+              <h3 class="scenario-title">Coffee Shop Order</h3>
+              <span class="difficulty-badge difficulty-beginner">Beginner</span>
             </div>
-        </footer>
+            <p class="scenario-description">
+              You're at Starbucks in NYC. Practice ordering like a local with
+              authentic American expressions.
+            </p>
+            <div class="scenario-action">
+              <i class="fas fa-play"></i>
+              Start Practice
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="scenario-card" onclick="openScenario('interview')">
+            <div class="scenario-header">
+              <h3 class="scenario-title">Job Interview Small Talk</h3>
+              <span class="difficulty-badge difficulty-intermediate"
+                >Intermediate</span
+              >
+            </div>
+            <p class="scenario-description">
+              Before your interview starts. Master the art of professional
+              American small talk.
+            </p>
+            <div class="scenario-action">
+              <i class="fas fa-play"></i>
+              Start Practice
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="scenario-card" onclick="openScenario('netflix')">
+            <div class="scenario-header">
+              <h3 class="scenario-title">Netflix & Chill</h3>
+              <span class="difficulty-badge difficulty-advanced">Advanced</span>
+            </div>
+            <p class="scenario-description">
+              Casual hangout with friends. Learn how Americans really talk in
+              relaxed settings.
+            </p>
+            <div class="scenario-action">
+              <i class="fas fa-play"></i>
+              Start Practice
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accent Section -->
+      <div id="accent" class="section">
+        <div style="display: flex; align-items: center; margin-bottom: 2rem">
+          <div class="stat-icon star-icon" style="margin-right: 1rem">
+            <i class="fas fa-volume-up"></i>
+          </div>
+          <div>
+            <h2
+              style="
+                font-size: 2rem;
+                font-weight: 700;
+                color: white;
+                margin-bottom: 0.25rem;
+              ">
+              Accent Mastery Lab
+            </h2>
+            <p style="color: #94a3b8">Perfect your American pronunciation</p>
+          </div>
+        </div>
+
+        <div class="scenarios-grid">
+          <div class="card">
+            <h3
+              style="
+                color: white;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              ">
+              American R Sound
+              <span style="font-size: 1.5rem">🔥🔥🔥</span>
+            </h3>
+            <div style="margin-bottom: 1rem">
+              <p
+                style="color: #94a3b8; margin-bottom: 0.5rem; font-weight: 600">
+                Practice Words:
+              </p>
+              <p
+                style="
+                  font-family: monospace;
+                  color: #fbbf24;
+                  background: rgba(15, 23, 42, 0.5);
+                  padding: 0.75rem;
+                  border-radius: 0.5rem;
+                  font-size: 1.1rem;
+                ">
+                car, hard, more
+              </p>
+            </div>
+            <div
+              style="
+                background: rgba(251, 191, 36, 0.2);
+                border: 1px solid rgba(251, 191, 36, 0.3);
+                padding: 1rem;
+                border-radius: 0.75rem;
+                margin-bottom: 1.5rem;
+              ">
+              <p style="color: #fcd34d; font-size: 0.9rem; line-height: 1.5">
+                💡 <strong>Master Tip:</strong> Curl your tongue back, don't
+                touch the roof of your mouth.
+              </p>
+            </div>
+            <button
+              onclick="practiceSound('american-r')"
+              style="
+                width: 100%;
+                background: linear-gradient(45deg, #8b5cf6, #7c3aed);
+                color: white;
+                padding: 0.75rem;
+                border: none;
+                border-radius: 0.75rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+              ">
+              🎯 Master This Sound
+            </button>
+          </div>
+
+          <div class="card">
+            <h3
+              style="
+                color: white;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              ">
+              TH Sounds
+              <span style="font-size: 1.5rem">🔥🔥</span>
+            </h3>
+            <div style="margin-bottom: 1rem">
+              <p
+                style="color: #94a3b8; margin-bottom: 0.5rem; font-weight: 600">
+                Practice Words:
+              </p>
+              <p
+                style="
+                  font-family: monospace;
+                  color: #fbbf24;
+                  background: rgba(15, 23, 42, 0.5);
+                  padding: 0.75rem;
+                  border-radius: 0.5rem;
+                  font-size: 1.1rem;
+                ">
+                think, that, three
+              </p>
+            </div>
+            <div
+              style="
+                background: rgba(251, 191, 36, 0.2);
+                border: 1px solid rgba(251, 191, 36, 0.3);
+                padding: 1rem;
+                border-radius: 0.75rem;
+                margin-bottom: 1.5rem;
+              ">
+              <p style="color: #fcd34d; font-size: 0.9rem; line-height: 1.5">
+                💡 <strong>Master Tip:</strong> Put your tongue between your
+                teeth and breathe out gently.
+              </p>
+            </div>
+            <button
+              onclick="practiceSound('th-sounds')"
+              style="
+                width: 100%;
+                background: linear-gradient(45deg, #8b5cf6, #7c3aed);
+                color: white;
+                padding: 0.75rem;
+                border: none;
+                border-radius: 0.75rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+              ">
+              🎯 Master This Sound
+            </button>
+          </div>
+
+          <div class="card">
+            <h3
+              style="
+                color: white;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              ">
+              Schwa /ə/
+              <span style="font-size: 1.5rem">🔥</span>
+            </h3>
+            <div style="margin-bottom: 1rem">
+              <p
+                style="color: #94a3b8; margin-bottom: 0.5rem; font-weight: 600">
+                Practice Words:
+              </p>
+              <p
+                style="
+                  font-family: monospace;
+                  color: #fbbf24;
+                  background: rgba(15, 23, 42, 0.5);
+                  padding: 0.75rem;
+                  border-radius: 0.5rem;
+                  font-size: 1.1rem;
+                ">
+                about, sofa, camera
+              </p>
+            </div>
+            <div
+              style="
+                background: rgba(251, 191, 36, 0.2);
+                border: 1px solid rgba(251, 191, 36, 0.3);
+                padding: 1rem;
+                border-radius: 0.75rem;
+                margin-bottom: 1.5rem;
+              ">
+              <p style="color: #fcd34d; font-size: 0.9rem; line-height: 1.5">
+                💡 <strong>Master Tip:</strong> The lazy vowel - most common
+                sound in American English!
+              </p>
+            </div>
+            <button
+              onclick="practiceSound('schwa')"
+              style="
+                width: 100%;
+                background: linear-gradient(45deg, #8b5cf6, #7c3aed);
+                color: white;
+                padding: 0.75rem;
+                border: none;
+                border-radius: 0.75rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+              ">
+              🎯 Master This Sound
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Schedule Section -->
+      <div id="plan" class="section">
+        <div style="display: flex; align-items: center; margin-bottom: 2rem">
+          <div
+            class="stat-icon"
+            style="
+              background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+              margin-right: 1rem;
+            ">
+            <i class="fas fa-calendar"></i>
+          </div>
+          <div>
+            <h2
+              style="
+                font-size: 2rem;
+                font-weight: 700;
+                color: white;
+                margin-bottom: 0.25rem;
+              ">
+              Elite Training Schedule
+            </h2>
+            <p style="color: #94a3b8">Your path to American English mastery</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 1rem;
+            ">
+            <!-- Monday-Friday -->
+            <div
+              style="
+                background: rgba(59, 130, 246, 0.2);
+                border: 1px solid rgba(59, 130, 246, 0.3);
+                padding: 1.5rem;
+                border-radius: 1rem;
+              ">
+              <h4
+                style="
+                  color: white;
+                  font-weight: 700;
+                  margin-bottom: 1rem;
+                  font-size: 1.1rem;
+                ">
+                Mon-Fri
+              </h4>
+              <div style="font-size: 0.9rem; line-height: 1.8">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    color: #93c5fd;
+                    margin-bottom: 0.5rem;
+                  ">
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: #fbbf24;
+                      border-radius: 50%;
+                      margin-right: 0.5rem;
+                    "></div>
+                  Morning: Flashcards + Shadowing
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    color: #93c5fd;
+                    margin-bottom: 0.5rem;
+                  ">
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: #fbbf24;
+                      border-radius: 50%;
+                      margin-right: 0.5rem;
+                    "></div>
+                  Afternoon: Series + Discussion
+                </div>
+                <div style="display: flex; align-items: center; color: #93c5fd">
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: #fbbf24;
+                      border-radius: 50%;
+                      margin-right: 0.5rem;
+                    "></div>
+                  Evening: Vocal Journal
+                </div>
+              </div>
+            </div>
+
+            <!-- Saturday -->
+            <div
+              style="
+                background: rgba(16, 185, 129, 0.2);
+                border: 1px solid rgba(16, 185, 129, 0.3);
+                padding: 1.5rem;
+                border-radius: 1rem;
+              ">
+              <h4
+                style="
+                  color: white;
+                  font-weight: 700;
+                  margin-bottom: 1rem;
+                  font-size: 1.1rem;
+                ">
+                Saturday
+              </h4>
+              <div style="font-size: 0.9rem; line-height: 1.8">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    color: #6ee7b7;
+                    margin-bottom: 0.5rem;
+                  ">
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: #fbbf24;
+                      border-radius: 50%;
+                      margin-right: 0.5rem;
+                    "></div>
+                  Movie Marathon
+                </div>
+                <div style="display: flex; align-items: center; color: #6ee7b7">
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: #fbbf24;
+                      border-radius: 50%;
+                      margin-right: 0.5rem;
+                    "></div>
+                  Mini Sketch Practice
+                </div>
+              </div>
+            </div>
+
+            <!-- Sunday -->
+            <div
+              style="
+                background: rgba(139, 92, 246, 0.2);
+                border: 1px solid rgba(139, 92, 246, 0.3);
+                padding: 1.5rem;
+                border-radius: 1rem;
+              ">
+              <h4
+                style="
+                  color: white;
+                  font-weight: 700;
+                  margin-bottom: 1rem;
+                  font-size: 1.1rem;
+                ">
+                Sunday
+              </h4>
+              <div style="font-size: 0.9rem; line-height: 1.8">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    color: #c4b5fd;
+                    margin-bottom: 0.5rem;
+                  ">
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: #fbbf24;
+                      border-radius: 50%;
+                      margin-right: 0.5rem;
+                    "></div>
+                  Weekly Review
+                </div>
+                <div style="display: flex; align-items: center; color: #c4b5fd">
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: #fbbf24;
+                      border-radius: 50%;
+                      margin-right: 0.5rem;
+                    "></div>
+                  Next Week Planning
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Power Focus -->
+        <div class="card challenge-card">
+          <div class="challenge-title">
+            <i class="fas fa-star" style="color: #fbbf24"></i>
+            This Week's Power Focus
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 1rem;
+              margin-top: 1.5rem;
+            ">
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(148, 163, 184, 0.2);
+                padding: 1rem;
+                border-radius: 0.75rem;
+              ">
+              <h4
+                style="color: #fbbf24; font-weight: 700; margin-bottom: 0.5rem">
+                📚 Vocabulary Theme:
+              </h4>
+              <p style="color: white; font-weight: 600">
+                Tech & Social Media 📱
+              </p>
+            </div>
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(148, 163, 184, 0.2);
+                padding: 1rem;
+                border-radius: 0.75rem;
+              ">
+              <h4
+                style="color: #10b981; font-weight: 700; margin-bottom: 0.5rem">
+                ⚡ Grammar Focus:
+              </h4>
+              <p style="color: white; font-weight: 600">
+                Phrasal Verbs in Context 🔄
+              </p>
+            </div>
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(148, 163, 184, 0.2);
+                padding: 1rem;
+                border-radius: 0.75rem;
+              ">
+              <h4
+                style="color: #8b5cf6; font-weight: 700; margin-bottom: 0.5rem">
+                🎭 Cultural Topic:
+              </h4>
+              <p style="color: white; font-weight: 600">
+                American Work Culture 💼
+              </p>
+            </div>
+            <div
+              style="
+                background: rgba(30, 41, 59, 0.5);
+                border: 1px solid rgba(148, 163, 184, 0.2);
+                padding: 1rem;
+                border-radius: 0.75rem;
+              ">
+              <h4
+                style="color: #ec4899; font-weight: 700; margin-bottom: 0.5rem">
+                🎵 Pronunciation:
+              </h4>
+              <p style="color: white; font-weight: 600">
+                Linking Sounds & Rhythm 🎵
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer style="text-align: center; margin-top: 3rem">
+        <div
+          style="
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(
+              135deg,
+              rgba(30, 41, 59, 0.8),
+              rgba(51, 65, 85, 0.6)
+            );
+            padding: 1rem 2rem;
+            border-radius: 1.5rem;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+          ">
+          <i
+            class="fas fa-star"
+            style="color: #fbbf24; animation: goldPulse 2s infinite"></i>
+          <span style="color: #94a3b8; font-weight: 500"
+            >Powered by AI • Built for Champions</span
+          >
+          <i
+            class="fas fa-star"
+            style="color: #fbbf24; animation: goldPulse 2s infinite"></i>
+        </div>
+      </footer>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
